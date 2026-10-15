@@ -57,7 +57,7 @@ namespace practic
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(569, 489);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(286, 31);
+            this.comboBox2.Size = new System.Drawing.Size(286, 37);
             this.comboBox2.TabIndex = 8;
             this.comboBox2.Text = "Сортировка";
             // 
@@ -67,7 +67,7 @@ namespace practic
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(274, 489);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(289, 31);
+            this.comboBox1.Size = new System.Drawing.Size(289, 37);
             this.comboBox1.TabIndex = 9;
             this.comboBox1.Text = "Фильтрация";
             // 
@@ -76,7 +76,7 @@ namespace practic
             this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox1.Location = new System.Drawing.Point(14, 488);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 32);
+            this.textBox1.Size = new System.Drawing.Size(254, 38);
             this.textBox1.TabIndex = 7;
             this.textBox1.Text = "Поиск";
             // 
@@ -86,15 +86,17 @@ namespace practic
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 35);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1010, 447);
             this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(423, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 23);
+            this.label1.Size = new System.Drawing.Size(163, 31);
             this.label1.TabIndex = 5;
             this.label1.Text = "Учет заказов";
             // 
@@ -114,7 +116,7 @@ namespace practic
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(196, 694);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 23);
+            this.label3.Size = new System.Drawing.Size(0, 31);
             this.label3.TabIndex = 11;
             // 
             // label2
@@ -122,16 +124,16 @@ namespace practic
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 694);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 23);
+            this.label2.Size = new System.Drawing.Size(251, 31);
             this.label2.TabIndex = 12;
             this.label2.Text = "Количество записей:";
             // 
             // OrderViewPr
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1006, 721);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -149,6 +151,7 @@ namespace practic
             this.Name = "OrderViewPr";
             this.RightToLeftLayout = true;
             this.Text = "Просмотр заказов";
+            this.Load += new System.EventHandler(this.OrderViewPr_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

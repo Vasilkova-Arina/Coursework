@@ -67,6 +67,7 @@ namespace practic
             this.button1.TabIndex = 1;
             this.button1.Text = "Товары";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -102,7 +103,7 @@ namespace practic
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 223);
+            this.label3.Location = new System.Drawing.Point(6, 231);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(726, 31);
             this.label3.TabIndex = 3;

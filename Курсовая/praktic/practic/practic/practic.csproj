@@ -56,6 +56,7 @@
     <Compile Include="Basket.Designer.cs">
       <DependentUpon>Basket.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connection.cs" />
     <Compile Include="Cprav.cs">
       <SubType>Form</SubType>
     </Compile>

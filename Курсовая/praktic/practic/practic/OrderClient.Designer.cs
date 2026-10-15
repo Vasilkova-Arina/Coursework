@@ -41,7 +41,7 @@ namespace practic
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(248, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 23);
+            this.label1.Size = new System.Drawing.Size(228, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Просмотр товаров";
             // 
@@ -51,6 +51,7 @@ namespace practic
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 35);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(684, 277);
             this.dataGridView1.TabIndex = 1;
             // 
@@ -66,10 +67,10 @@ namespace practic
             // 
             // OrderClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(684, 461);
+            this.ClientSize = new System.Drawing.Size(682, 453);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
@@ -80,6 +81,7 @@ namespace practic
             this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "OrderClient";
             this.Text = "Просмотр товаров";
+            this.Load += new System.EventHandler(this.OrderClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

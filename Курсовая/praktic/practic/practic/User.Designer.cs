@@ -281,6 +281,7 @@ namespace practic
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "User";
             this.Text = "Учет пользователей";
+            this.Load += new System.EventHandler(this.User_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -76,6 +76,7 @@ namespace practic
             this.button1.TabIndex = 3;
             this.button1.Text = "Пользователи";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -86,6 +87,7 @@ namespace practic
             this.button2.TabIndex = 3;
             this.button2.Text = "Товары";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -96,6 +98,7 @@ namespace practic
             this.button3.TabIndex = 3;
             this.button3.Text = "Заказы";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
