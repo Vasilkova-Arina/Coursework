@@ -64,6 +64,12 @@ namespace practic
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (Application.OpenForms.Count > 1)
+            {
+                Form pastForm = Application.OpenForms[Application.OpenForms.Count - 2];
+                pastForm.Show();
+            }
+
             this.Close();
         }
     }

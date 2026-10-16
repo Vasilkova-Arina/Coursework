@@ -45,7 +45,7 @@ namespace practic
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(110, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 31);
+            this.label1.Size = new System.Drawing.Size(164, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Покупка игрушек";
             // 
@@ -54,7 +54,7 @@ namespace practic
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 31);
+            this.label2.Size = new System.Drawing.Size(107, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Менеджер:";
             // 
@@ -89,6 +89,7 @@ namespace practic
             this.button3.TabIndex = 2;
             this.button3.Text = "Выход из аккаунта";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
             // 
@@ -113,10 +114,10 @@ namespace practic
             // 
             // MenuMened
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(423, 497);
+            this.ClientSize = new System.Drawing.Size(425, 505);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);

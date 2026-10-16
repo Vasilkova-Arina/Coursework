@@ -26,20 +26,28 @@ namespace practic
         {
             this.Hide();
             new User().ShowDialog();
-            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
             new Product().ShowDialog();
-            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
             new Order().ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.Count > 1)
+            {
+                Form pastForm = Application.OpenForms[Application.OpenForms.Count - 2];
+                pastForm.Show();
+            }
+
             this.Close();
         }
     }
