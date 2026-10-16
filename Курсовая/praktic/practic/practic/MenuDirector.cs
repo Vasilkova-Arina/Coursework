@@ -19,7 +19,16 @@ namespace practic
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            new OrderViewPr().ShowDialog();
+            this.Close();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new PoductView().ShowDialog();
+            this.Close();
         }
     }
 }

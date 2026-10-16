@@ -51,6 +51,7 @@ namespace practic
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 35);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(684, 277);
             this.dataGridView1.TabIndex = 1;
             // 
@@ -63,6 +64,7 @@ namespace practic
             this.button1.TabIndex = 2;
             this.button1.Text = "Выход в меню";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // OrderClient
             // 
@@ -80,6 +82,7 @@ namespace practic
             this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "OrderClient";
             this.Text = "Просмотр товаров";
+            this.Load += new System.EventHandler(this.OrderClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -44,3 +44,70 @@ C:\Users\ASUS\OneDrive\Рабочий стол\Курсовая\praktic\practic\
 C:\Users\ASUS\OneDrive\Рабочий стол\Курсовая\praktic\practic\practic\bin\Debug\Resources\Captcha2.png
 C:\Users\ASUS\OneDrive\Рабочий стол\Курсовая\praktic\practic\practic\bin\Debug\Resources\Captcha3.png
 C:\Users\ASUS\OneDrive\Рабочий стол\Курсовая\praktic\practic\practic\bin\Debug\Resources\Captcha4.png
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\Captcha1.png
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\Captcha2.png
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\Captcha3.png
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\Captcha4.png
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\bin\Debug\practic.exe.config
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\bin\Debug\practic.exe
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\bin\Debug\practic.pdb
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\bin\Debug\System.Memory.dll
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\bin\Debug\System.Buffers.dll
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Basket.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Cprav.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Main.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.MenuAdmin.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.MenuCass.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.MenuClient.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.MenuDirector.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.MenuMened.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.OforOrder.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Order.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.OrderClient.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.OrderViewPr.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.PoductView.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Product.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Properties.Resources.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.User.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.ViewOrder.resources
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.csproj.GenerateResource.cache
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.csproj.Up2Date
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.exe
+C:\Users\ASUS\OneDrive\Рабочий стол\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.pdb
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\Captcha1.png
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\Captcha2.png
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\Captcha3.png
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\Captcha4.png
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\bin\Debug\practic.exe.config
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\bin\Debug\practic.exe
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\bin\Debug\practic.pdb
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\bin\Debug\System.Memory.dll
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\bin\Debug\System.Buffers.dll
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.csproj.AssemblyReference.cache
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Basket.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Cprav.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Main.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.MenuAdmin.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.MenuCass.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.MenuClient.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.MenuDirector.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.MenuMened.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.OforOrder.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Order.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.OrderClient.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.OrderViewPr.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.PoductView.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Product.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.Properties.Resources.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.User.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.ViewOrder.resources
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.csproj.GenerateResource.cache
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.csproj.CoreCompileInputs.cache
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.csproj.CopyComplete
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.exe
+C:\Users\student246.ZAMT\Desktop\Vasilkova\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.pdb

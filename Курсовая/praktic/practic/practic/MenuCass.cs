@@ -16,5 +16,19 @@ namespace practic
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new PoductView().ShowDialog();
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Basket().ShowDialog();
+            this.Close();
+        }
     }
 }

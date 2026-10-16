@@ -17,7 +17,7 @@ namespace practic
         private int count = 0;
         private string capthaOtv = "";
         private bool viewCaptcha = false;
-        private string conStr = "host=localhost;uid=root;pwd=root;database=toy_shop";
+        private string conStr = "host=localhost;uid=root;pwd=;database=toy_shop";
 
         public static int UserId;
         public static string Login;

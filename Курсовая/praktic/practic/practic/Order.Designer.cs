@@ -63,7 +63,7 @@ namespace practic
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(421, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 23);
+            this.label1.Size = new System.Drawing.Size(163, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Учет заказов";
             // 
@@ -72,7 +72,7 @@ namespace practic
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 694);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 23);
+            this.label2.Size = new System.Drawing.Size(251, 31);
             this.label2.TabIndex = 0;
             this.label2.Text = "Количество записей:";
             // 
@@ -81,7 +81,7 @@ namespace practic
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(198, 694);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 23);
+            this.label3.Size = new System.Drawing.Size(0, 31);
             this.label3.TabIndex = 0;
             // 
             // dataGridView1
@@ -90,6 +90,7 @@ namespace practic
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-2, 35);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1010, 327);
             this.dataGridView1.TabIndex = 1;
             // 
@@ -98,7 +99,7 @@ namespace practic
             this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox1.Location = new System.Drawing.Point(0, 367);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 32);
+            this.textBox1.Size = new System.Drawing.Size(254, 38);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Поиск";
             // 
@@ -108,7 +109,7 @@ namespace practic
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(260, 368);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(289, 31);
+            this.comboBox1.Size = new System.Drawing.Size(289, 37);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "Фильтрация";
             // 
@@ -183,7 +184,7 @@ namespace practic
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(555, 368);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(286, 31);
+            this.comboBox2.Size = new System.Drawing.Size(286, 37);
             this.comboBox2.TabIndex = 3;
             this.comboBox2.Text = "Сортировка";
             // 
@@ -204,7 +205,7 @@ namespace practic
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(12, 415);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(267, 31);
+            this.comboBox3.Size = new System.Drawing.Size(267, 37);
             this.comboBox3.TabIndex = 6;
             this.comboBox3.Text = "Продавец";
             // 
@@ -214,7 +215,7 @@ namespace practic
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(12, 452);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(267, 31);
+            this.comboBox4.Size = new System.Drawing.Size(267, 37);
             this.comboBox4.TabIndex = 6;
             this.comboBox4.Text = "Товар";
             // 
@@ -224,7 +225,7 @@ namespace practic
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(12, 489);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(267, 31);
+            this.comboBox5.Size = new System.Drawing.Size(267, 37);
             this.comboBox5.TabIndex = 6;
             this.comboBox5.Text = "Метод оплаты";
             // 
@@ -234,7 +235,7 @@ namespace practic
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(12, 526);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(267, 31);
+            this.comboBox6.Size = new System.Drawing.Size(267, 37);
             this.comboBox6.TabIndex = 6;
             this.comboBox6.Text = "Статус";
             // 
@@ -243,7 +244,7 @@ namespace practic
             this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox2.Location = new System.Drawing.Point(334, 415);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(254, 32);
+            this.textBox2.Size = new System.Drawing.Size(254, 38);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Количество товаров";
             // 
@@ -252,7 +253,7 @@ namespace practic
             this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox3.Location = new System.Drawing.Point(334, 453);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(254, 32);
+            this.textBox3.Size = new System.Drawing.Size(254, 38);
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "Сумма заказа";
             // 
@@ -261,7 +262,7 @@ namespace practic
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(334, 493);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(111, 27);
+            this.checkBox1.Size = new System.Drawing.Size(142, 35);
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Доставка";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -270,7 +271,7 @@ namespace practic
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(330, 524);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(258, 32);
+            this.dateTimePicker1.Size = new System.Drawing.Size(258, 38);
             this.dateTimePicker1.TabIndex = 9;
             // 
             // textBox4
@@ -278,7 +279,7 @@ namespace practic
             this.textBox4.BackColor = System.Drawing.Color.Lime;
             this.textBox4.Location = new System.Drawing.Point(634, 460);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(160, 32);
+            this.textBox4.Size = new System.Drawing.Size(160, 38);
             this.textBox4.TabIndex = 10;
             this.textBox4.Text = "Доставлен";
             // 
@@ -287,7 +288,7 @@ namespace practic
             this.textBox5.BackColor = System.Drawing.Color.Red;
             this.textBox5.Location = new System.Drawing.Point(634, 498);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(160, 32);
+            this.textBox5.Size = new System.Drawing.Size(160, 38);
             this.textBox5.TabIndex = 10;
             this.textBox5.Text = "Не доставлен";
             // 
@@ -296,16 +297,16 @@ namespace practic
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(594, 434);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(227, 23);
+            this.label4.Size = new System.Drawing.Size(302, 31);
             this.label4.TabIndex = 11;
             this.label4.Text = "Подсветка статуса заказа";
             // 
             // Order
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1006, 721);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -338,6 +339,7 @@ namespace practic
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "Order";
             this.Text = "Учет заказов";
+            this.Load += new System.EventHandler(this.Order_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
