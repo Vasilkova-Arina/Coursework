@@ -46,7 +46,7 @@ namespace practic
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(116, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 31);
+            this.label1.Size = new System.Drawing.Size(164, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Покупка игрушек";
             // 
@@ -55,7 +55,7 @@ namespace practic
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 31);
+            this.label2.Size = new System.Drawing.Size(153, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Администратор:";
             // 
@@ -64,7 +64,7 @@ namespace practic
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(171, 69);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 31);
+            this.label3.Size = new System.Drawing.Size(0, 23);
             this.label3.TabIndex = 2;
             // 
             // button1
@@ -109,6 +109,7 @@ namespace practic
             this.button4.TabIndex = 3;
             this.button4.Text = "Выход из аккаунта";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox1
             // 
@@ -122,10 +123,10 @@ namespace practic
             // 
             // MenuAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(423, 497);
+            this.ClientSize = new System.Drawing.Size(425, 505);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

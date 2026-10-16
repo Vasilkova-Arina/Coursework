@@ -28,7 +28,12 @@ namespace practic
         {
             this.Hide();
             new PoductView().ShowDialog();
-            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Main().ShowDialog();
         }
     }
 }
