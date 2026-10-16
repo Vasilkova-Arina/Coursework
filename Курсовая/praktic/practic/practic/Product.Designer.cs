@@ -59,7 +59,7 @@ namespace practic
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(432, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 31);
+            this.label1.Size = new System.Drawing.Size(129, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Учет товаров";
             // 
@@ -78,7 +78,7 @@ namespace practic
             this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox1.Location = new System.Drawing.Point(3, 370);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(285, 38);
+            this.textBox1.Size = new System.Drawing.Size(285, 32);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Поиск";
             // 
@@ -88,7 +88,7 @@ namespace practic
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(294, 370);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(284, 37);
+            this.comboBox1.Size = new System.Drawing.Size(284, 31);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "Фильтрация";
             // 
@@ -106,7 +106,7 @@ namespace practic
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 697);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 31);
+            this.label2.Size = new System.Drawing.Size(194, 23);
             this.label2.TabIndex = 6;
             this.label2.Text = "Количество записей:";
             // 
@@ -115,7 +115,7 @@ namespace practic
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(208, 697);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 31);
+            this.label3.Size = new System.Drawing.Size(0, 23);
             this.label3.TabIndex = 6;
             // 
             // button2
@@ -127,6 +127,7 @@ namespace practic
             this.button2.TabIndex = 7;
             this.button2.Text = "Выход в меню";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button5
             // 
@@ -164,7 +165,7 @@ namespace practic
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(584, 371);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(284, 37);
+            this.comboBox2.Size = new System.Drawing.Size(284, 31);
             this.comboBox2.TabIndex = 3;
             this.comboBox2.Text = "Сортировка";
             // 
@@ -173,7 +174,7 @@ namespace practic
             this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox2.Location = new System.Drawing.Point(3, 419);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(285, 38);
+            this.textBox2.Size = new System.Drawing.Size(285, 32);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Название";
             // 
@@ -182,7 +183,7 @@ namespace practic
             this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox3.Location = new System.Drawing.Point(3, 457);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(285, 38);
+            this.textBox3.Size = new System.Drawing.Size(285, 32);
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "Описание";
             // 
@@ -191,7 +192,7 @@ namespace practic
             this.textBox4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox4.Location = new System.Drawing.Point(3, 495);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(285, 38);
+            this.textBox4.Size = new System.Drawing.Size(285, 32);
             this.textBox4.TabIndex = 2;
             this.textBox4.Text = "Цена";
             // 
@@ -201,7 +202,7 @@ namespace practic
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(294, 420);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(284, 37);
+            this.comboBox3.Size = new System.Drawing.Size(284, 31);
             this.comboBox3.TabIndex = 3;
             this.comboBox3.Text = "Категория";
             // 
@@ -211,7 +212,7 @@ namespace practic
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(294, 458);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(284, 37);
+            this.comboBox4.Size = new System.Drawing.Size(284, 31);
             this.comboBox4.TabIndex = 3;
             this.comboBox4.Text = "Поставщик";
             // 
@@ -229,7 +230,7 @@ namespace practic
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(294, 504);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(164, 31);
+            this.label4.Size = new System.Drawing.Size(127, 23);
             this.label4.TabIndex = 12;
             this.label4.Text = "Фото товара:";
             // 
@@ -239,16 +240,16 @@ namespace practic
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(12, 551);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(869, 31);
+            this.label5.Size = new System.Drawing.Size(666, 23);
             this.label5.TabIndex = 13;
             this.label5.Text = "Если товара осталось меньше 5 единиц, то товар подсвечивается красным";
             // 
             // Product
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.ClientSize = new System.Drawing.Size(1008, 721);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);

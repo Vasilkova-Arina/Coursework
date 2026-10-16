@@ -67,7 +67,7 @@ namespace practic
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(359, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 31);
+            this.label1.Size = new System.Drawing.Size(181, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Учет справочников";
             // 
@@ -89,10 +89,10 @@ namespace practic
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 38);
+            this.tabPage1.Location = new System.Drawing.Point(4, 32);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(997, 475);
+            this.tabPage1.Size = new System.Drawing.Size(997, 481);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Поставщики";
             // 
@@ -101,7 +101,7 @@ namespace practic
             this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox2.Location = new System.Drawing.Point(396, 423);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(363, 38);
+            this.textBox2.Size = new System.Drawing.Size(363, 32);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Телефон";
             // 
@@ -110,7 +110,7 @@ namespace practic
             this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox1.Location = new System.Drawing.Point(14, 423);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(363, 38);
+            this.textBox1.Size = new System.Drawing.Size(363, 32);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "ФИО";
             // 
@@ -129,10 +129,10 @@ namespace practic
             this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabPage2.Controls.Add(this.textBox3);
             this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 38);
+            this.tabPage2.Location = new System.Drawing.Point(4, 32);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(997, 475);
+            this.tabPage2.Size = new System.Drawing.Size(997, 481);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Категории";
             // 
@@ -141,7 +141,7 @@ namespace practic
             this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox3.Location = new System.Drawing.Point(14, 419);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(385, 38);
+            this.textBox3.Size = new System.Drawing.Size(385, 32);
             this.textBox3.TabIndex = 3;
             this.textBox3.Text = "Название категории";
             // 
@@ -161,9 +161,9 @@ namespace practic
             this.tabPage3.Controls.Add(this.textBox4);
             this.tabPage3.Controls.Add(this.dataGridView3);
             this.tabPage3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tabPage3.Location = new System.Drawing.Point(4, 38);
+            this.tabPage3.Location = new System.Drawing.Point(4, 32);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(997, 475);
+            this.tabPage3.Size = new System.Drawing.Size(997, 481);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Метод оплаты";
             // 
@@ -172,7 +172,7 @@ namespace practic
             this.textBox4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox4.Location = new System.Drawing.Point(10, 417);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(408, 38);
+            this.textBox4.Size = new System.Drawing.Size(408, 32);
             this.textBox4.TabIndex = 3;
             this.textBox4.Text = "Вид оплаты";
             // 
@@ -191,9 +191,9 @@ namespace practic
             this.tabPage4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabPage4.Controls.Add(this.textBox5);
             this.tabPage4.Controls.Add(this.dataGridView4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 38);
+            this.tabPage4.Location = new System.Drawing.Point(4, 32);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(997, 475);
+            this.tabPage4.Size = new System.Drawing.Size(997, 481);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Статус заказа";
             // 
@@ -202,7 +202,7 @@ namespace practic
             this.textBox5.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox5.Location = new System.Drawing.Point(14, 424);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(436, 38);
+            this.textBox5.Size = new System.Drawing.Size(436, 32);
             this.textBox5.TabIndex = 3;
             this.textBox5.Text = "Название статуса";
             // 
@@ -255,13 +255,14 @@ namespace practic
             this.button4.TabIndex = 2;
             this.button4.Text = "Выход в меню";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 626);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 31);
+            this.label2.Size = new System.Drawing.Size(194, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "Количество записей:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -271,15 +272,15 @@ namespace practic
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(212, 623);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 31);
+            this.label3.Size = new System.Drawing.Size(0, 23);
             this.label3.TabIndex = 3;
             // 
             // Cprav
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.ClientSize = new System.Drawing.Size(1008, 721);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button4);

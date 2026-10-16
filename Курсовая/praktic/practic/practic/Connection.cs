@@ -11,7 +11,7 @@ namespace practic
     {
         private static string _connStr = $"Server=localhost;" +
             $"Uid=root;" +
-            $"Pwd=root;" +
+            $"Pwd=;" +
             $"Database=toy_shop;";
         public static MySqlConnection GetConnection()
         {

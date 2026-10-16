@@ -76,5 +76,10 @@ namespace practic
 
             dataGridView1.ScrollBars = ScrollBars.Both;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
