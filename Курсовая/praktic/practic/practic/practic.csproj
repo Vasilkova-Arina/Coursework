@@ -56,7 +56,7 @@
     <Compile Include="Basket.Designer.cs">
       <DependentUpon>Basket.cs</DependentUpon>
     </Compile>
-    <Compile Include="Connection.cs" />
+    <Compile Include="Addapters\Connection.cs" />
     <Compile Include="Cprav.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +117,7 @@
     <Compile Include="OrderViewPr.Designer.cs">
       <DependentUpon>OrderViewPr.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaginationHelper.cs" />
     <Compile Include="PoductView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,23 +132,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Addapters\Session.cs" />
     <Compile Include="User.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <Compile Include="Addapters\Users.cs" />
     <Compile Include="ViewOrder.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewOrder.Designer.cs">
       <DependentUpon>ViewOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrderClient.cs">
+    <Compile Include="ViewProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OrderClient.Designer.cs">
-      <DependentUpon>OrderClient.cs</DependentUpon>
+    <Compile Include="ViewProduct.Designer.cs">
+      <DependentUpon>ViewProduct.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Basket.resx">
       <DependentUpon>Basket.cs</DependentUpon>
@@ -179,8 +182,8 @@
     <EmbeddedResource Include="Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrderClient.resx">
-      <DependentUpon>OrderClient.cs</DependentUpon>
+    <EmbeddedResource Include="ViewProduct.resx">
+      <DependentUpon>ViewProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderViewPr.resx">
       <DependentUpon>OrderViewPr.cs</DependentUpon>

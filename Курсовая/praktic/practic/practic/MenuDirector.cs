@@ -32,8 +32,13 @@ namespace practic
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Main().ShowDialog();
+            if (Application.OpenForms.Count > 1)
+            {
+                Form pastForm = Application.OpenForms[Application.OpenForms.Count - 2];
+                pastForm.Show();
+            }
+
+            this.Close();
         }
     }
 }

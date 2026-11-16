@@ -45,7 +45,7 @@ namespace practic
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(116, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 23);
+            this.label1.Size = new System.Drawing.Size(217, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Покупка игрушек";
             // 
@@ -54,7 +54,7 @@ namespace practic
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.Size = new System.Drawing.Size(131, 31);
             this.label2.TabIndex = 0;
             this.label2.Text = "Директор:";
             // 
@@ -106,16 +106,16 @@ namespace practic
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 231);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(554, 23);
+            this.label3.Size = new System.Drawing.Size(726, 31);
             this.label3.TabIndex = 3;
             this.label3.Text = "Создать формы где просматривается и можно сделать отчеты";
             // 
             // MenuDirector
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(425, 505);
+            this.ClientSize = new System.Drawing.Size(423, 497);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -131,7 +131,7 @@ namespace practic
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(441, 544);
             this.Name = "MenuDirector";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Меню директора";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

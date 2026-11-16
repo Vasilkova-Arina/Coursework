@@ -7,11 +7,11 @@ using MySql.Data.MySqlClient;
 
 namespace practic
 {
-    internal static class Connection
+    public static class Connection
     {
-        private static string _connStr = $"Server=localhost;" +
+        public static string _connStr = $"Server=localhost;" +
             $"Uid=root;" +
-            $"Pwd=;" +
+            $"Pwd=root;" +
             $"Database=toy_shop;";
         public static MySqlConnection GetConnection()
         {

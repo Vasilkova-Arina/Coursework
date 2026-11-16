@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using System.Threading.Tasks;
+
 
 namespace practic
 {
@@ -17,14 +17,10 @@ namespace practic
         private int count = 0;
         private string capthaOtv = "";
         private bool viewCaptcha = false;
-        private string conStr = "host=localhost;uid=root;pwd=;database=toy_shop";
 
-        public static int UserId;
-        public static string Login;
-        public static int RoleId;
-        public static string RoleName;
 
         private readonly Random rnd = new Random();
+        
         public Main()
         {
             InitializeComponent();
@@ -143,12 +139,11 @@ namespace practic
 
         private int CheckUser(string login, string pass)
         {
-            using (var cn = new MySqlConnection(conStr))
+            using (var cn = Connection.GetConnection())
             using (var cmd = new MySqlCommand(
-                @"SELECT u.UserID, u.UserRole, r.RoleName
-                  FROM `user` u
-                  JOIN role r ON r.RoleID = u.UserRole
-                  WHERE u.UserLogin = @l AND u.UserPassword = @p", cn))
+                @"SELECT u.UserID, u.UserFirstName, u.UserName, u.UserThreeName, u.UserRole
+          FROM `user` u
+          WHERE u.UserLogin = @l AND u.UserPassword = @p", cn))
             {
                 cmd.Parameters.AddWithValue("@l", login);
                 cmd.Parameters.AddWithValue("@p", pass);
@@ -158,11 +153,16 @@ namespace practic
                 {
                     if (!rd.Read()) return -1;
 
-                    UserId = rd.GetInt32(0);
-                    RoleId = rd.GetInt32(1);
-                    RoleName = rd.GetString(2);
-                    Login = login;
-                    return RoleId;
+                    Session.CurrentUser = new Users
+                    {
+                        UserID = rd.GetInt32(0),
+                        UserFirstName = rd.GetString(1),
+                        UserName = rd.GetString(2),
+                        UserThreeName = rd.GetString(3),
+                        UserRole = rd.GetInt32(4)
+                    };
+
+                    return Session.CurrentUser.UserRole; 
                 }
             }
         }

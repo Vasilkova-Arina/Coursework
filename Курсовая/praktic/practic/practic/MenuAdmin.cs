@@ -50,5 +50,11 @@ namespace practic
 
             this.Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Cprav().ShowDialog();
+        }
     }
 }

@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace practic
 {
-    public partial class OrderClient : Form
+    public partial class ViewProduct : Form
     {
         private string cmdStr =
                 @"SELECT 
@@ -25,7 +25,7 @@ namespace practic
                 FROM Product p
                 JOIN Category c ON c.CategoryID = p.ProductCategory
                 JOIN Supplier s ON s.SupplierID = p.ProductSupplier;";
-        public OrderClient()
+        public ViewProduct()
         {
             InitializeComponent();
             SetupGrid();
