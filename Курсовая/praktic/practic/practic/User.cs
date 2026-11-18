@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace practic
 {
@@ -39,6 +40,31 @@ namespace practic
 
         private void User_Load(object sender, EventArgs e)
         {
+            comboBox2.Items.Clear();
+            comboBox2.Items.Add("Без сортировки");
+            comboBox2.Items.Add("По роли (А-Я)");
+            comboBox2.Items.Add("По роли (Я-А)");
+            comboBox2.SelectedIndex = 0;
+
+            comboBox1.Items.Clear();
+            comboBox1.Items.Add("Все года");
+
+            int currentYear = DateTime.Now.Year;
+
+            for (int year = currentYear - 18; year >= currentYear - 80; year--)
+            {
+                comboBox1.Items.Add(year.ToString());
+            }
+            comboBox1.SelectedIndex = 0;
+
+            dateBirthd.MaxDate = DateTime.Today.AddYears(-18); 
+            dateBirthd.MinDate = DateTime.Today.AddYears(-80); 
+            dateBirthd.Value = DateTime.Today.AddYears(-18); 
+
+            textBox1.TextChanged += (s, ev) => LoadData();
+            comboBox1.SelectedIndexChanged += (s, ev) => LoadData();
+            comboBox2.SelectedIndexChanged += (s, ev) => LoadData();
+
             LoadData();
         }
         private void LoadComboBox()
@@ -60,31 +86,65 @@ namespace practic
 
         private void LoadData()
         {
-            using (var conn = Connection.GetConnection())
+            string sql = @"
+                    SELECT u.UserID, u.UserThreeName, u.UserFirstName, u.UserName, 
+                    u.UserPhone, u.UserDateBirthday, u.UserLogin, u.UserPassword, 
+                    u.UserRole, r.RoleName
+                    FROM `User` u
+                    JOIN Role r ON r.RoleID = u.UserRole
+                    WHERE 1=1";
+
+            string searchText = textBox1.Text.Trim();
+            if (!string.IsNullOrEmpty(searchText) && searchText != "Поиск")
             {
-                conn.Open();
-                using (MySqlCommand cmd = new MySqlCommand(cmdStr, conn))
-                {
-                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    dataGridView1.DataSource = dt;
-
-                }
+                sql += " AND (u.UserThreeName LIKE @search OR u.UserFirstName LIKE @search OR u.UserName LIKE @search)";
             }
-            dataGridView1.Columns["UserID"].Visible = false;
-            dataGridView1.Columns["UserThreeName"].HeaderText = "Фамилия";
-            dataGridView1.Columns["UserFirstName"].HeaderText = "Имя";
-            dataGridView1.Columns["UserName"].HeaderText = "Отчество";
-            dataGridView1.Columns["UserPhone"].HeaderText = "Телефон";
-            dataGridView1.Columns["UserDateBirthday"].HeaderText = "Дата рождения";
-            dataGridView1.Columns["UserLogin"].HeaderText = "Логин";
-            dataGridView1.Columns["UserPassword"].HeaderText = "Пароль";
-            dataGridView1.Columns["RoleName"].HeaderText = "Роль";
 
-            dataGridView1.Columns["UserDateBirthday"].DefaultCellStyle.Format = "dd.MM.yyyy";
+            if (comboBox1.SelectedIndex > 0)
+            {
+                sql += " AND YEAR(u.UserDateBirthday) = @year";
+            }
+
+            if (comboBox2.Text == "По роли (А-Я)")
+                sql += " ORDER BY r.RoleName ASC";
+            else if (comboBox2.Text == "По роли (Я-А)")
+                sql += " ORDER BY r.RoleName DESC";
+            else
+                sql += " ORDER BY u.UserID";
+
+            using (var conn = Connection.GetConnection())
+            using (var cmd = new MySqlCommand(sql, conn))
+            {
+                if (!string.IsNullOrEmpty(searchText) && searchText != "Поиск")
+                    cmd.Parameters.AddWithValue("@search", "%" + searchText + "%");
+
+                if (comboBox1.SelectedIndex > 0)
+                    cmd.Parameters.AddWithValue("@year", comboBox1.SelectedItem.ToString());
+
+                conn.Open();
+                var da = new MySqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+
+            if (dataGridView1.Columns.Count > 0)
+            {
+                dataGridView1.Columns["UserID"].Visible = false;
+                dataGridView1.Columns["UserRole"].Visible = false;
+                dataGridView1.Columns["UserThreeName"].HeaderText = "Фамилия";
+                dataGridView1.Columns["UserFirstName"].HeaderText = "Имя";
+                dataGridView1.Columns["UserName"].HeaderText = "Отчество";
+                dataGridView1.Columns["UserPhone"].HeaderText = "Телефон";
+                dataGridView1.Columns["UserDateBirthday"].HeaderText = "Дата рождения";
+                dataGridView1.Columns["UserLogin"].HeaderText = "Логин";
+                dataGridView1.Columns["UserPassword"].HeaderText = "Пароль";
+                dataGridView1.Columns["RoleName"].HeaderText = "Роль";
+
+                dataGridView1.Columns["UserDateBirthday"].DefaultCellStyle.Format = "dd.MM.yyyy";
+            }
+
             label2.Text = "Количество записей: " + dataGridView1.Rows.Count.ToString();
-
         }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -287,6 +347,90 @@ namespace practic
             {
                 e.Handled = true; 
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (currentOrderId == 0)
+            {
+                MessageBox.Show("Выберите пользователя из таблицы (кликните по строке)!");
+                return;
+            }
+
+            try
+            {
+                string sql = @"UPDATE `User` SET 
+                   UserThreeName = @lastName, 
+                   UserFirstName = @firstName, 
+                   UserName = @middleName, 
+                   UserPhone = @phone, 
+                   UserDateBirthday = @birthday, 
+                   UserLogin = @login, 
+                   UserPassword = @password, 
+                   UserRole = @role 
+                   WHERE UserID = @id";
+
+                string[] fioParts = txtFIO.Text.Trim().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                if (fioParts.Length < 2)
+                {
+                    MessageBox.Show("Введите хотя бы Фамилию и Имя!");
+                    return;
+                }
+
+                using (var conn = Connection.GetConnection())
+                using (var cmd = new MySqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@lastName", fioParts.Length > 0 ? fioParts[0] : "");
+                    cmd.Parameters.AddWithValue("@firstName", fioParts.Length > 1 ? fioParts[1] : "");
+                    cmd.Parameters.AddWithValue("@middleName", fioParts.Length > 2 ? fioParts[2] : "");
+
+                    cmd.Parameters.AddWithValue("@phone", txtPhone.Text);
+                    cmd.Parameters.AddWithValue("@birthday", dateBirthd.Value); 
+                    cmd.Parameters.AddWithValue("@login", txtLogin.Text);
+                    cmd.Parameters.AddWithValue("@password", txtPass.Text);
+                    cmd.Parameters.AddWithValue("@role", cmbRole.SelectedValue);
+
+                    cmd.Parameters.AddWithValue("@id", currentOrderId);
+
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Данные пользователя успешно обновлены!");
+                LoadData(); 
+                ClearFields(); 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка изменения: " + ex.Message);
+            }
+        }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+            isAddingNew = false;
+            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+            currentOrderId = Convert.ToInt32(row.Cells["UserID"].Value);
+
+            string lastName = row.Cells["UserThreeName"].Value?.ToString() ?? "";
+            string firstName = row.Cells["UserFirstName"].Value?.ToString() ?? "";
+            string middleName = row.Cells["UserName"].Value?.ToString() ?? "";
+            txtFIO.Text = $"{lastName} {firstName} {middleName}".Trim();
+
+            txtPhone.Text = row.Cells["UserPhone"].Value?.ToString() ?? "";
+            txtLogin.Text = row.Cells["UserLogin"].Value?.ToString() ?? "";
+            txtPass.Text = row.Cells["UserPassword"].Value?.ToString() ?? "";
+
+            if (row.Cells["UserDateBirthday"].Value != DBNull.Value)
+            {
+                dateBirthd.Value = Convert.ToDateTime(row.Cells["UserDateBirthday"].Value);
+            }
+
+            string roleName = row.Cells["RoleName"].Value.ToString();
+            cmbRole.SelectedIndex = cmbRole.FindStringExact(roleName);
+
         }
     }
 }

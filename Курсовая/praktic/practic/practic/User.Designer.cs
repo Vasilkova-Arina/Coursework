@@ -77,6 +77,7 @@ namespace practic
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1007, 315);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // label2
@@ -120,6 +121,7 @@ namespace practic
             this.button4.TabIndex = 9;
             this.button4.Text = "Изменить";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -180,6 +182,7 @@ namespace practic
             // 
             this.txtFIO.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtFIO.Location = new System.Drawing.Point(98, 438);
+            this.txtFIO.MaxLength = 300;
             this.txtFIO.Name = "txtFIO";
             this.txtFIO.Size = new System.Drawing.Size(401, 38);
             this.txtFIO.TabIndex = 15;
@@ -190,6 +193,7 @@ namespace practic
             // 
             this.txtPhone.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtPhone.Location = new System.Drawing.Point(136, 481);
+            this.txtPhone.MaxLength = 12;
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(363, 38);
             this.txtPhone.TabIndex = 15;
@@ -231,6 +235,7 @@ namespace practic
             // 
             this.txtLogin.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtLogin.Location = new System.Drawing.Point(108, 523);
+            this.txtLogin.MaxLength = 100;
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(391, 38);
             this.txtLogin.TabIndex = 20;
@@ -239,6 +244,7 @@ namespace practic
             // 
             this.txtPass.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtPass.Location = new System.Drawing.Point(122, 566);
+            this.txtPass.MaxLength = 100;
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(377, 38);
             this.txtPass.TabIndex = 21;

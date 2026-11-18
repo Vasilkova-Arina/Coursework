@@ -184,7 +184,7 @@ namespace practic
                 dataGridView1.Columns["PaymentMethod"].Visible = false;
                 dataGridView1.Columns["PaymentStatus"].Visible = false;
             }
-            
+            label3.Text = "Количество записей: " + dataGridView1.Rows.Count.ToString();
             PaginationHelper pager = new PaginationHelper(dataGridView1, this, 10);
             pager.Draw(800, 500);
 
@@ -366,7 +366,7 @@ namespace practic
 
         private void Order_Load(object sender, EventArgs e)
         {
-            label10.Text = $"Добро пожаловать: {Session.CurrentUser.Fio} | {DateTime.Now:dd.MM.yyyy HH:mm:ss}";
+            
             
             if (Session.CurrentUser != null && Session.CurrentUser.UserRole == 4)
             {
@@ -382,7 +382,41 @@ namespace practic
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label3.Text = "Количество записей: " + dataGridView1.Rows.Count.ToString();
+            label10.Text = $"Добро пожаловать: {Session.CurrentUser.Fio} | {DateTime.Now:dd.MM.yyyy HH:mm:ss}";
+        }
+
+        private void txtCount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtSum_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))
+            {
+                return;
+            }
+
+            if (e.KeyChar == '.' || e.KeyChar == ',')
+            {
+                if (((TextBox)sender).Text.Contains(".") || ((TextBox)sender).Text.Contains(","))
+                {
+                    e.Handled = true;
+                }
+                else
+                {
+                    if (e.KeyChar == ',')
+                    {
+                        e.KeyChar = '.';
+                    }
+                }
+                return;
+            }
+
+            e.Handled = true;
         }
     }
 }

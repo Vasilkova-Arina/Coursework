@@ -32,7 +32,6 @@ namespace practic
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Order));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtbPoick = new System.Windows.Forms.TextBox();
@@ -70,16 +69,6 @@ namespace practic
             this.label1.Size = new System.Drawing.Size(163, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Учет заказов";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 648);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 31);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Количество записей:";
             // 
             // label3
             // 
@@ -267,6 +256,7 @@ namespace practic
             this.txtCount.Name = "txtCount";
             this.txtCount.Size = new System.Drawing.Size(268, 38);
             this.txtCount.TabIndex = 2;
+            this.txtCount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCount_KeyPress);
             // 
             // txtSum
             // 
@@ -276,6 +266,7 @@ namespace practic
             this.txtSum.Name = "txtSum";
             this.txtSum.Size = new System.Drawing.Size(428, 38);
             this.txtSum.TabIndex = 2;
+            this.txtSum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSum_KeyPress);
             // 
             // label4
             // 
@@ -382,7 +373,6 @@ namespace practic
             this.Controls.Add(this.txtbPoick);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -400,7 +390,6 @@ namespace practic
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtbPoick;
