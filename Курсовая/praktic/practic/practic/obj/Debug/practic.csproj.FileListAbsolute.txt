@@ -179,3 +179,9 @@ C:\Users\ASUS\OneDrive\Рабочий стол\4 курс\Coursework\Coursework\
 C:\Users\ASUS\OneDrive\Рабочий стол\4 курс\Coursework\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.csproj.Up2Date
 C:\Users\ASUS\OneDrive\Рабочий стол\4 курс\Coursework\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.exe
 C:\Users\ASUS\OneDrive\Рабочий стол\4 курс\Coursework\Coursework\Курсовая\praktic\practic\practic\obj\Debug\practic.pdb
+C:\Users\ASUS\OneDrive\Рабочий стол\4 курс\Coursework\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\picture\bassboom.jpg
+C:\Users\ASUS\OneDrive\Рабочий стол\4 курс\Coursework\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\picture\galaxy_x.png
+C:\Users\ASUS\OneDrive\Рабочий стол\4 курс\Coursework\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\picture\glysh.jpg
+C:\Users\ASUS\OneDrive\Рабочий стол\4 курс\Coursework\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\picture\mouse_pro.jpg
+C:\Users\ASUS\OneDrive\Рабочий стол\4 курс\Coursework\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\picture\mw200.jpg
+C:\Users\ASUS\OneDrive\Рабочий стол\4 курс\Coursework\Coursework\Курсовая\praktic\practic\practic\bin\Debug\Resources\picture\probook15.png

@@ -242,6 +242,24 @@
     <None Include="Resources\icons8-плюшевый-медведь-100.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\picture\bassboom.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\picture\galaxy_x.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\picture\glysh.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\picture\mouse_pro.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\picture\mw200.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\picture\probook15.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Captcha1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
